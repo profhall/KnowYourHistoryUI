@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Know Your History Demo</title>
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+<!--<script  type="application/javascript" src="script.js"></script>-->
+<script defer  type="application/javascript" >
+    document.addEventListener("DOMContentLoaded", function(e) {
+        var navbar = document.querySelectorAll(".nav-button");
+    });
+
+    function changeBG(navButton) {
+        console.log(navButton.style.backgroundColor);
+        document.querySelector('body').style.backgroundColor = navButton.style.backgroundColor;
+
+        // create for loop that the resets all list items .style.boxShadow = "10px 20px 30px blue";
+    }
+
+</script>
+
+
+<body>
+<main class="grid-container">
+    <nav class="sidebar" >
+        <div style="width: 100%;">
+            <img class="user" src="https://www.bsn.eu/wp-content/uploads/2016/12/user-icon-image-placeholder-300-grey.jpg">
+        </div>
+    </nav>
+
+    <nav class="mainNav" >
+        <table id="navTable" cellspacing="5" >
+            <tr>
+                <th class="nav-button" onclick="changeBG(this)" id="home" style="background-color: red;" > Home</th>
+                <th class="nav-button" onclick="changeBG(this)" id="scenario"  style="background-color: greenyellow;"> Learning Scenario</th>
+                <th class="nav-button active" onclick="changeBG(this)" id="interview"  style="background-color:dodgerblue; "> Interview</th>
+                <th class="nav-button" id="activity" onclick="changeBG(this)"  style="background-color: yellow;"> Learning Activity</th>
+            </tr>
+        </table>
+    </nav>
+
+    <section class="viewer" style="text-align: center" >
+        <div id="browser" style="">
+            <h1 class="title">
+                Abraham Lincoln
+            </h1>
+            <main id="window">
+                <img src="https://argoswimvideo.com/wp-content/uploads/2017/11/video-placeholder-1280x720-40.jpg">
+            </main>
+        </div>
+    </section>
+
+    <section class="mssngr" >
+        <div class="messageBox">
+            <main class="conversation">
+                <ul>
+                    <li class="user">
+                        <span class="title">Me: </span> <span> What was the reason or the Emancipation Proclamation</span>
+                    </li>
+                    <li class="user">
+                        <span class="title">Me: </span> <span> What was the reason or the Emancipation Proclamation</span>
+                    </li>
+
+                    <li class="hist_figure">
+                        <span class="title">Abe: </span> <span>The Emancipation was for...</span>
+                    </li>
+                    <li class="user">
+                        <span class="title">Me: </span> <span> What was the reason or the Emancipation Proclamation</span>
+                    </li>
+                    <li class="hist_figure">
+                        <span class="title">Abe: </span> <span>The Emancipation was for...</span>
+                    </li>
+                    <li class="user">
+                        <span class="title">Me: </span> <span> What was the reason or the Emancipation Proclamation</span>
+                    </li>
+                    <li class="user">
+                        <span class="title">Me: </span> <span> What was the reason or the Emancipation Proclamation</span>
+                    </li>
+
+                    <li class="hist_figure">
+                        <span class="title">Abe: </span> <span>The Emancipation was for...</span>
+                    </li>
+                    <li class="user">
+                        <span class="title">Me: </span> <span> What was the reason or the Emancipation Proclamation</span>
+                    </li>
+                    <li class="user">
+                        <span class="title">Me: </span> <span> What was the reason or the Emancipation Proclamation</span>
+                    </li>
+
+                    <li class="hist_figure">
+                        <span class="title">Abe: </span> <span>The Emancipation was for...</span>
+                    </li>
+                    <li class="user">
+                        <span class="title">Me: </span> <span> What was the reason or the Emancipation Proclamation</span>
+                    </li>
+
+                    <li class="hist_figure">
+                        <span class="title">Abe: </span> <span>The Emancipation was for...</span>
+                    </li>
+                    <li class="user">
+                        <span class="title">Me: </span> <span> What was the reason or the Emancipation Proclamation</span>
+                    </li>
+
+                </ul>
+            </main>
+            <input placeholder="Type message here" class="textInput">
+
+        </div>
+
+        <button class="sendButton">
+            Send Message
+        </button>
+    </section>
+</main>
+
+</body>
+</html>

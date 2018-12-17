@@ -1,0 +1,172 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+    list-style-type: none;
+}
+body{
+    height: 100vh;
+    text-align: center;
+    background-color: dodgerblue;
+
+
+}
+/* Extra small devices (phones, 600px and down) */
+/*@media all and (max-width: 600px) {...}*/
+
+/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
+/*@media all and (min-width: 600px) {...}*/
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media all and (min-width: 768px) {
+    .grid-container{
+        height: 100%;
+        display:grid;
+        grid-gap: 0 0;
+        grid-template-columns: 178px ;
+        grid-template-areas:
+                "side-bar nav nav nav nav nav nav nav"
+                "side-bar viewr viewr viewr viewr viewr viewr viewr"
+                "side-bar viewr viewr viewr viewr viewr viewr viewr"
+                "side-bar viewr viewr viewr viewr viewr viewr viewr"
+                "side-bar viewr viewr viewr viewr viewr viewr viewr"
+                "side-bar viewr viewr viewr viewr viewr viewr viewr"
+                "side-bar viewr viewr viewr viewr viewr viewr viewr"
+                "side-bar viewr viewr viewr viewr viewr viewr viewr"
+                "side-bar mssngr mssngr mssngr mssngr mssngr mssngr mssngr"
+                "side-bar mssngr mssngr mssngr mssngr mssngr mssngr mssngr"
+                "side-bar mssngr mssngr mssngr mssngr mssngr mssngr mssngr"
+    ;
+    }}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+
+nav.mainNav{
+    grid-area: nav;
+    /*background-color: lightgray ;*/
+}
+nav.sidebar{
+    grid-area: side-bar;
+    background-color: blueviolet ;
+}
+section.viewer{
+    grid-area: viewr;
+    /*background-color: grey ;*/
+}
+section.mssngr{
+    grid-area: mssngr;
+    /*background-color: lightyellow ;*/
+    max-height: 85%;
+    margin-top: .5%;
+}
+button.sendButton{
+    float:right;
+    height:80%;
+    background-color: crimson;
+    text-align: center;
+    width: 22%;
+    border-radius: 50px;
+    box-shadow: 5px 3px black;
+    margin-top:1%;
+}
+
+input.textInput{
+    width: 100%;
+    height: 20%;
+    border-radius: 25px;
+
+}
+
+div.messageBox{
+    height: 95%;
+    /*background-color: lightyellow;*/
+    width: 77% ;
+    display: inline-block;
+    /*border: black solid;*/
+    text-align: center;
+
+}
+main.conversation{
+    width: 100%;
+    height: 75%;
+    max-height: 80%;
+    background-color: blanchedalmond;
+    text-align: left;
+    overflow: scroll;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+
+}
+main.conversation ul li {
+    margin: 0 0 0 7px;
+}
+
+#browser{
+    /*background-color: dodgerblue;*/
+    width: 100%;
+    margin: auto;
+    height: 98%;
+    text-align: center;
+}
+
+.mainNav{
+    width:95%;
+    height: 125%;
+    text-align: center;
+    margin: 0 auto auto auto;
+}
+
+.mainNav table tr th{
+}
+.viewer{
+    max-height: 100%;
+
+    position: relative;
+}
+main#window img{
+    width: 95%;
+    max-width: 830px !important;
+}
+main#window#browser{
+    position: relative;
+
+}
+main#window{
+    /*background-color: whitesmoke;*/
+    width: 100% ;
+    min-height: 100%;
+    border-radius: 5px;
+    margin: auto;
+    z-index: -1;
+
+}
+img.user{
+    border-radius: 100px;
+    width:100%;
+    max-width: 150px;
+
+}
+#navTable{
+    width:100%;
+    height:100%;
+
+}
+
+.nav-button{
+    border-radius: 15px 15px 0 0;
+    width: 25% !important;
+    padding: 15px 0 15px 0;
+    border: black 0.5px solid;
+    border-bottom: 0px;
+}
+.nav-button.active{
+
+}
+.nav-button:not([class*="active"]) {
+    margin: 5px;
+    box-shadow: -2px -2px black;
+
+
+}
